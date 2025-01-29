@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
     categorie = "",
 }) => {
     return (
-        <div className={`relative flex flex-col items-end pr-3 xl:h-[230px] xl:w-[210px] h-[150px] w-[310px] rounded-2xl hover:-translate-y-1 transition duration-450 ease-in-out ${bgcolor} ${className}`}>
+        <div className={`relative flex flex-col items-end pr-3 xl:h-[230px] xl:w-[210px] h-[150px] w-[310px] rounded-2xl hover:-translate-y-1 hover:cursor-pointer transition duration-450 ease-in-out ${bgcolor} ${className}`}>
             {icon}
             <div className="absolute flex flex-col bottom-0 p-6 right-0 h-5/6 w-full bg-[var(--dark-blue)] hover:bg-[var(--desaturated-blue)] transition duration-450 ease-in-out rounded-xl gap-4">
                 <div className="text-[#BBC0FF] flex flex-row justify-between items-center ">
