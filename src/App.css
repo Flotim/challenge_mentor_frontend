@@ -1,0 +1,15 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100vw;
+  background:var(--very-dark-blue);
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+}
+
+
