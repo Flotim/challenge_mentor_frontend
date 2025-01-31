@@ -73,9 +73,9 @@ function App() {
 
   return (
     <>
+
       <div className='flex flex-col xl:flex-row xl:gap-5 xl:h-fit xl-gap-15 gap-6'>
         
-        {/* Sélecteur de timeframe */}
         <div className='relative p-6 h-[200px] xl:h-[484px] xl:w-[210px] w-full flex xl:flex-col flex-row justify-around xl:justify-end items-end xl:items-start xl:gap-3 bg-[var(--dark-blue)] rounded-2xl'>
           <p onClick={() => setTimeframe("daily")} className={`text-[var(--pale-blue)] hover:text-white hover:cursor-pointer transition duration-450 ease-in-out ${timeframe === "daily" ? "text-white" : ""}`}>Daily</p>
           <p onClick={() => setTimeframe("weekly")} className={`text-[var(--pale-blue)] hover:text-white hover:cursor-pointer transition duration-450 ease-in-out ${timeframe === "weekly" ? "text-white" : ""}`}>Weekly</p>
@@ -90,7 +90,6 @@ function App() {
           </div>
         </div>
 
-        {/* Cartes dynamiques */}
         <div className='flex flex-col items-center justify-center gap-6'>
           <div className='grid grid-cols-1 xl:grid-cols-3 gap-6'>
             {data.map((item) => (

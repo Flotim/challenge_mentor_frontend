@@ -2,11 +2,11 @@ import React from "react";
 
 
 interface CardProps {
-    icon: React.ReactNode;     // Icône ou image dans la carte
+    icon: React.ReactNode;     
     className?: string;
     bgcolor?: string;
     description?: string;
-    title?: string;    // Classes supplémentaires
+    title?: string;    
     categorie?: string;
 }
 
@@ -14,9 +14,9 @@ const Card: React.FC<CardProps> = ({
     description,
     title,
     icon,
-    className = "",
-    bgcolor = "",
-    categorie = "",
+    className ,
+    bgcolor ,
+    categorie ,
 }) => {
     return (
         <div className={`relative flex flex-col items-end pr-3 xl:h-[230px] xl:w-[210px] h-[150px] w-[310px] rounded-2xl hover:-translate-y-1 hover:cursor-pointer transition duration-450 ease-in-out ${bgcolor} ${className}`}>
